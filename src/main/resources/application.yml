@@ -9,3 +9,8 @@ spring:
     password: root
   jackson:
     default-property-inclusion: non_null
+
+#Change this based into the second answer(#3 option) found in https://stackoverflow.com/questions/40241843/failed-to-start-bean-documentationpluginsbootstrapper-in-spring-data-rest
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
